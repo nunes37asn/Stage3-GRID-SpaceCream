@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  }
+
+  :root{
+    font-size: 62.5%;
+  }
+
+  body{
+    text-align: center;
+    background: #E5E5E5;
+
+  }
+
+  body p{
+    font-size: 2.0rem;
+    line-height: 1.5rem;
+    font-family: 'Palanquin';
+    color: #23053A;
+
+  }
+  
+  .page{
+    max-width: 38.4rem;
+    margin: 0 auto;
+    
+  }
+  
+
+  h2 {
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05rem;
+    animation: topdown infinite 4s;
+    font-family: 'Staatliches';
+    color: #4A4E69;
+  }
+
+  header{
+    text-align: center;
+    height: 27.9rem;
+    margin-bottom: 3.6rem;
+    margin: 0 auto;
+    background: #8E9AAF;
+
+    
+    
+  }
+  
+  header h1{
+    font-family: 'Staatliches';
+    margin-bottom: 2.9rem;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.5rem;
+    animation: topdown infinite 3s;
+    text-align: center;
+   
+    color: #ffffff;
+    background: #CBC0D3;
+
+    padding: 0.8rem;
+ 
+  }
+
+  #logo {
+    width: 100%;
+    height: 0 auto;
+
+    padding: 3.2rem 12.4rem 3.2rem 12.4rem;
+  }
+  
+  main{
+    width: 38.4rem;
+    
+
+    margin-top: -2rem;
+    background: #EFF1FF;
+
+  }
+  main span {
+
+  font-family: 'Staatliches';
+  animation: topdown 900ms;
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+
+  color: #4A4E69;
+
+  }
+
+  main p{
+    font-family: 'Palanquin';
+
+    font-size: 2.0rem;
+    line-height: 1.5rem;
+    margin-top: 1.4rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    color: #23053A;
+    padding: 1.4rem 4.3rem 6.3rem 3.6rem;
+    animation-delay: 1s;
+    
+  }
+  
+
+  .card{
+    position: relative;
+    
+  }
+
+  .card img{
+    object-fit: cover;
+    margin-bottom: 4.0rem;
+    animation: topdown 1s;
+    animation-duration: 1.5s;
+
+    transition-property: transform;
+    
+    transform: transform 200ms;
+    transition-timing-function: ease-in;
+ 
+
+ 
+  }
+  .card img:hover{
+    transform: scale(1.1);
+    opacity: 0.4;
+    transition-delay: 200ms;
+  }
+
+  .card h2 {
+    position: absolute;
+    width: fit-content;
+    top: 1.7rem;
+    right: 3.9rem;
+    height: 3.2rem;
+    padding: 0 2.3rem;
+
+    font-family: 'Staatliches';
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.5rem;
+    color: #4A4E69;
+
+    background: #FEEAFA;
+    border-radius: 2rem;
+   
+  }
+    
+  
+  @keyframes topdown {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes downtop {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+/* dessa vez não foi fácil /*
+
+  
+
