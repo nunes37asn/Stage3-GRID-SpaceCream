@@ -36,6 +36,7 @@
   header h1{
     background: #CBC0D3;
     font-family: 'Staatliches';
+    animation: topdown 1s;
 
     display: flex;
     flex-direction: column;
@@ -52,6 +53,9 @@
     font-family: var(--ff-header);
     font-size: 1.6rem;
     line-height: 2rem;
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 
     align-items: center;
     text-align: center;
@@ -65,16 +69,27 @@
 
   #logo{
     padding: 3.2rem 8.1rem;
+
    }
 
   main{
   
     grid-area: main;
     background: #FFFFFF;
+    margin: auto;
+    
   }
 
   .container-grid{
     display: grid;
+
+    grid-template-areas: 
+    "par1 par2 par3";
+    column-gap: 3.2rem;
+    margin: auto 3.2rem;
+
+    
+
 
   }
 
@@ -84,6 +99,12 @@
   }
   .card img {
     max-width: 100%;
+    animation-name: topdown;
+    animation-duration: 2s;
+       
+  }
+  .card img:hover{
+    opacity: 50%;
     
   }
 
@@ -103,7 +124,9 @@
 
     color: #4a4e69;
 
-    background-color: rgb(233, 247, 247);
+    background-color: rgb(255, 255, 255);
+
+    
   }
   footer a{
     font-weight: 700;
@@ -113,4 +136,26 @@
     color: #9ea8f5;
   }
 
+  @keyframes topdown{
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 2;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes updown {
+    0%{
+      opacity: 0;
+      transform: translateY(-20px);
+
+    }
+    99%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
     
